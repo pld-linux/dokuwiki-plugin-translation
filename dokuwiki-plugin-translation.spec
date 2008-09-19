@@ -19,12 +19,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_plugindir	%{_dokudir}/lib/plugins/%{plugin}
 
 %description
-Help with translation efforts in a multilingual wiki.
-Similar to nsrelation.
+Help with translation efforts in a multilingual wiki. Similar to
+nsrelation.
 
 %description -l pl.UTF-8
-Wtyczka do dokuwiki ułatwiająca tworzenie wielojęzykowych
-wersji. Podobna do wtyczki nsrelation.
+Wtyczka do dokuwiki ułatwiająca tworzenie wersji wielojęzykowych.
+Podobna do wtyczki nsrelation.
 
 %prep
 %setup -q -n %{plugin}
