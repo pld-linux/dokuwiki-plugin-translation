@@ -1,17 +1,17 @@
 %define		plugin		translation
-%define		snap		2008.04.01
+%define		snap		2008.08.12
 Summary:	DokuWiki translation plugin
 Summary(pl.UTF-8):	Wtyczka translation dla DokuWiki
 Name:		dokuwiki-plugin-%{plugin}
 Version:	%{snap}
-Release:	0.1
+Release:	1
 License:	GPL v2
 Group:		Applications/WWW
 Source0:	http://dev.splitbrain.org/download/snapshots/translation-plugin-latest.tgz
 # Source0-md5:	9a00bea4664a9de916228611e56ec84d
 Source1:	dokuwiki-find-lang.sh
 URL:		http://wiki.splitbrain.org/plugin:translation
-Requires:	dokuwiki >= 20061106
+Requires:	dokuwiki >= 20070626
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -19,10 +19,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_plugindir	%{_dokudir}/lib/plugins/%{plugin}
 
 %description
-Plugin for DokuWiki.
+Help with translation efforts in a multilingual wiki.
+Similar to nsrelation.
 
 %description -l pl.UTF-8
-Wtyczka dla DokuWiki
+Wtyczka do dokuwiki ułatwiająca tworzenie wielojęzykowych
+wersji. Podobna do wtyczki nsrelation.
 
 %prep
 %setup -q -n %{plugin}
