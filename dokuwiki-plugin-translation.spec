@@ -1,9 +1,8 @@
 %define		plugin		translation
-%define		snap		2008.08.12
 Summary:	DokuWiki translation plugin
 Summary(pl.UTF-8):	Wtyczka translation dla DokuWiki
 Name:		dokuwiki-plugin-%{plugin}
-Version:	%{snap}
+Version:	20080812
 Release:	1
 License:	GPL v2
 Group:		Applications/WWW
